@@ -1,0 +1,154 @@
+:root {
+    /* Primary */
+    --darkBlueMainBg: hsl(233, 47%, 7%);
+    --desatBlueCardBg: hsl(244, 38%, 16%);
+    --softVioletAccent: hsl(277, 64%, 61%);
+
+    /* Neutral */
+    --whiteH1AndStats: hsl(0, 0%, 100%);
+    --paragraphWhite: hsla(0, 0%, 100%, 0.75);
+    --statHeadingWhite: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--darkBlueMainBg);
+}
+
+main {
+    background-color: var(--desatBlueCardBg);
+    text-align: center;
+    width: 85%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 0 2rem 0;
+}
+
+.image {
+    height: 30vh;
+    background-color: hsl(277, 64%, 61%);
+    background-image: url('images/image-header-mobile.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+h1 {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+h1, .accent, h2 {
+    font-size: 1.8rem;
+    color: var(--whiteH1AndStats);
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 0 0 .2rem 0;
+}
+
+p {
+    color: var(--paragraphWhite);
+    line-height: 1.7;
+    padding: 0 2rem 2.5rem 2rem;
+}
+
+.accent {
+    color: var(--softVioletAccent);
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stats-container span {
+    color: var(--statHeadingWhite);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    color: var(--paragraphWhite);
+}
+
+.attribution a {
+    font-size: 11px;
+    color: var(--softVioletAccent); 
+}
+
+@media only screen and (min-width: 769px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+    main {
+        padding: 0;
+    }
+
+   .stats-card {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        max-height: 45vh;
+    }
+
+    .stats-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0rem 0 0 2rem;
+        width: 75%;
+    }
+    
+   
+
+   
+    .image {
+        width: 50%;
+        min-height: 380px;
+        flex-shrink: 0;
+        background: url('images/image-header-desktop.jpg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-color: hsl(277, 64%, 61%);
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .container {
+        width: max-content
+    }
+
+    h1, .accent {
+        font-size: 2rem;
+    }
+
+    h1 {
+        padding: 2rem;
+    }
+
+    p {
+        width: 90%;
+    }
+}
