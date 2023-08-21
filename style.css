@@ -82,11 +82,7 @@ p {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    height: 2.5rem;
+    visibility: hidden;
 }
 
 .attribution {
@@ -150,5 +146,11 @@ footer {
 
     p {
         width: 90%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        visibility: visible;
     }
 }
