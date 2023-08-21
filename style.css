@@ -84,6 +84,9 @@ p {
 footer {
     position: absolute;
     bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 2.5rem;
 }
 
 .attribution {
@@ -121,10 +124,7 @@ footer {
         width: 75%;
     }
     
-   
-
-   
-    .image {
+   .image {
         width: 50%;
         min-height: 380px;
         flex-shrink: 0;
