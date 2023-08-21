@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-stats-card-component-using-flexbox-M6WO0OlGnN)
+- Live Site URL: (https://mooogz.github.io/stats-preview-card-component/)
 
 ### Built with
 
